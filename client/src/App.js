@@ -20,9 +20,6 @@
             const web3 = await getWeb3();
             const Web3 = require('web3');
            // const web3 =  new Web3('http://localhost:7545')
-
-            //const deployerAddress = '0x8f276d4285A7D7be981afC3a5E4B967c49a77cc1';
-           // const deployerPrivateKey = '98858ba4f7ec7a9eb40c9eb810439618288bf6ce794e6b4e61548a8992f5e6de';
            // const HDWalletProvider = require('@truffle/hdwallet-provider');
 
             /* const provider = new HDWalletProvider(
