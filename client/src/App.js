@@ -27,9 +27,11 @@
               'https://ropsten.infura.io/v3/447e523ed3bc4b0eadc8e017f07c7721'
             ); */
            // console.log(web3)
-            const contractAddress = '0xe5b77DA615eEcA99080173603859f92d9492ac81';
+           // const contractAddress = '0xe5b77DA615eEcA99080173603859f92d9492ac81';
+            const networkId = await web3.eth.net.getId();
+            const deployedNetwork = ExpenseFactory.networks[networkId];
             let instance = new web3.eth.Contract(
-            ExpenseFactory.abi, contractAddress
+            ExpenseFactory.abi, deployedNetwork.address
           );
          /*  instance  = await instance.deploy({
             data : ExpenseFactory.bytecode
